@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="./js/fontawesome.js"></script>
+    <title>LCO-Basketball</title>
+  </head>
+  <body>
+    <!-- ==================  PopUp ================= -->
+    <!-- ==================  Sign Up ================= -->
+    <div class="container popup" id="signUp">
+      <div class="pop-header">
+        <h1 class="head" id="popHead">Sign Up</h1>
+      </div>
+      <form id="form" class="container">
+        <input type="text" class="name" placeholder="Name" required /> <br />
+        <input type="email" placeholder="E-mail" required /> <br />
+        <input type="password" placeholder="Password" required /> <br />
+        <button type="submit" class="btn btn-pink" id="signBtn">Sign Up</button>
+      </form>
+      <p id="quistion">
+        Have an acount ? <span class="sign" id="signIn_btn"> Sign In </span>
+      </p>
+    </div>
+    <!-- ==================  Sign In ================= -->
+    <div class="container popup" id="signIn">
+      <div class="pop-header">
+        <h1 class="head" id="popHead">Sign In</h1>
+      </div>
+      <form id="form" class="container">
+        <input type="email" placeholder="E-mail" required /> <br />
+        <input type="password" placeholder="Password" required /> <br />
+        <button type="submit" class="btn btn-pink" id="signBtn">Sign In</button>
+      </form>
+      <p id="quistion">
+        Don't Have an acount ? <span class="sign" id="signUp_btn">Sign Up</span>
+      </p>
+    </div>
+    <div id="overlay"></div>
+    <!-- ==================  Nav Bar ================= -->
+    <nav class="bg-dark">
+      <a href="#" class="logo">
+        <img
+          src="./Assets/sports-logo-transparent.png"
+          alt=""
+          class="logo-img"
+        />
+      </a>
+      <button
+        class="burger"
+        style="cursor: pointer;background:none;border: none ; outline: none ;color: white;"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu bg-dark">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tourtment">Tourtment</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item btn btn-pink">
+          <a class="nav-link openpop" href="#">Sign In</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- ================ Home section ============= -->
+    <section id="home">
+      <div class="hero-body">
+        <div class="content">
+          <h1 class="head ">LCO</h1>
+          <p>Go fight for it team</p>
+          <div class="btns">
+            <a href="#" class="btn btn-lg btn-pink openpop">Join Us!</a>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319">
+          <path
+            fill="#fff"
+            fill-opacity="1"
+            d="M0,224L48,208C96,192,192,160,288,154.7C384,149,480,171,576,192C672,213,768,235,864,224C960,213,1056,171,1152,160C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+    <!-- ======================About section =================== -->
+    <section id="about" class="items-center">
+      <h1 class="head">About Us</h1>
+
+      <div class="container">
+        <div class="sec-1  about-info">
+          <div class="img anime-2 hide">
+            <img class="img" src="./Assets/tourtment.svg" alt="" />
+          </div>
+          <div class="content anime-1 hide items-center">
+            <h1 class="sub-head">Tourtment</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              sunt aspernatur commodi dolores doloribus possimus placeat
+              asperiores est magni ab voluptates debitis saepe, necessitatibus
+              numquam tenetur esse nobis, at deleniti.
+            </p>
+            <a href="#tourtment" class="btn">Read More...</a>
+          </div>
+        </div>
+        <div class="sec-2 about-info">
+          <div class="content anime-2 hide items-center">
+            <h1 class="sub-head">Our Team</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+              sunt aspernatur commodi dolores doloribus possimus placeat
+              asperiores est magni ab voluptates debitis saepe, necessitatibus
+              numquam tenetur esse nobis, at deleniti.
+            </p>
+            <a href="#team" class="btn">Read More...</a>
+          </div>
+          <div class="img anime-1 hide">
+            <img class="img" src="./Assets/undraw_basketball_agx4.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================Team section =================== -->
+    <section id="team" class="items-center">
+      <h1 class="head">Our Team</h1>
+      <div class="members ">
+        <div class="member hide  anime-2  anime-1">
+          <h1>Player One</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?
+            Quisquam reprehenderit repellat amet, inventore nemo animi aut.
+            Doloribus, officiis.
+          </p>
+          <div class="links">
+            <a href="#" class="face"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="insta">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="twitt"> <i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="member anime-2 hide ">
+          <h1>Player Two</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?
+            Quisquam reprehenderit repellat amet, inventore nemo animi aut.
+            Doloribus, officiis.
+          </p>
+          <div class="links">
+            <a href="#" class="face"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="insta">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="twitt"> <i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="member anime-1 hide">
+          <h1>Player Three</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?
+            Quisquam reprehenderit repellat amet, inventore nemo animi aut.
+            Doloribus, officiis.
+          </p>
+          <div class="links">
+            <a href="#" class="face"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="insta">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="twitt"> <i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="member anime-2 hide">
+          <h1>Player Four</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?
+            Quisquam reprehenderit repellat amet, inventore nemo animi aut.
+            Doloribus, officiis.
+          </p>
+          <div class="links">
+            <a href="#" class="face"> <i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="insta">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="twitt"> <i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="member hide anime-1">
+          <h1>Player Five</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quo?
+            Quisquam reprehenderit repellat amet, inventore nemo animi aut.
+            Doloribus, officiis.
+          </p>
+          <div class="links">
+            <a href="#" class="face ">
+              <i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="#" class="insta ">
+              <i class="fab fa-instagram-square"></i
+            ></a>
+            <a href="#" class="twitt"> <i class="fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================Tourtment =================== -->
+    <section id="tourtment" class="items-center">
+      <h1 class="head first-h">Tourtment</h1>
+      <div class=" tourt-cont">
+        <div class="content items-center hide anime-1">
+          <h1 class="head">Big Tourtment is comming soon!</h1>
+          <a href="#faq" class="btn btn-lg btn-pink">FAQ</a>
+        </div>
+        <div class="video hide anime-2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/hqvGOPB0KmQ"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- =========================FAQ==================================== -->
+    <section id="faq" class="container">
+      <h1 class="head">FAQ</h1>
+      <div class="items">
+        <div class="item-body anime-1 hide">
+          <p class="q">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit?.
+          </p>
+          <p class="a">
+            Accusamus suscipit adipisci accusantium laborum consectetur eius
+            molestiae obcaecati!
+          </p>
+        </div>
+        <div class="item-body anime-2 hide">
+          <p class="q">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit?.
+          </p>
+          <p class="a">
+            Accusamus suscipit adipisci accusantium laborum consectetur eius
+            molestiae obcaecati!
+          </p>
+        </div>
+        <div class="item-body anime-1 hide">
+          <p class="q">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit?.
+          </p>
+          <p class="a">
+            Accusamus suscipit adipisci accusantium laborum consectetur eius
+            molestiae obcaecati!
+          </p>
+        </div>
+        <div class="item-body anime-2 hide">
+          <p class="q">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit?.
+          </p>
+          <p class="a">
+            Accusamus suscipit adipisci accusantium laborum consectetur eius
+            molestiae obcaecati!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--==========================CCONTACT==============-->
+    <section id="contact" class="items-center">
+      <h1 class="head">Contact Info</h1>
+      <footer class="contact-body container items-center">
+        <h2 class="contact-item">
+          <span class="mobile"> Mobile: </span>+91999999999
+          <br />
+          <span class="adress"> Address: </span> : LCO Basketball Ground, 55 -
+          Fictional Homes, Fictional Road Near Fictional Lake. India
+        </h2>
+      </footer>
+    </section>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+<!-- 
+  <i class="fab fa-facebook-square"></i>
+  <i class="fab fa-instagram-square"></i>
+  <i class="fab fa-twitter-square"></i>
+ -->
