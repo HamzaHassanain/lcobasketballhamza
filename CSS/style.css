@@ -513,7 +513,10 @@ svg.ed {
     color: black;
   }
   #about .container {
-    padding: 0 2rem;
+    padding: 0 0.5rem;
+  }
+  #about .img {
+    width: 100%;
   }
   #team .member {
     width: 60%;
