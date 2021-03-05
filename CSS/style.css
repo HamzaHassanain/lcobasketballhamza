@@ -185,16 +185,18 @@ nav {
 .menu .nav-item {
   border-radius: 1.5rem;
   padding: 1rem 0;
-  margin: 1rem 0.4rem;
-  box-shadow: 1px 1px 6px rgb(243, 243, 243), 1px 1px 16px rgb(46, 46, 46);
+  /* margin: 1rem 0.4rem; */
+  /* box-shadow: 1px 1px 6px rgb(243, 243, 243), 1px 1px 16px rgb(46, 46, 46); */
   display: inline;
 }
 .menu .nav-link {
   padding: 0.5rem 1.3rem;
 }
-.menu .nav-link.sign:hover {
+.menu .nav-link {
   transition: 0.4s;
-  color: #e74292;
+}
+.menu .nav-link:hover {
+  color: #e74292 !important;
 }
 .logo {
   margin-left: 1.5rem;
@@ -422,6 +424,8 @@ svg.ed {
     display: block;
   }
   .menu {
+    min-height: 100vh;
+
     text-align: center;
     width: 40%;
     transition: 0.4s all;
